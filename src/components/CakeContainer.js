@@ -10,7 +10,13 @@ function CakeContainer() {
 }
 
 const mapStateToProps = state => {
+    numOfCakes: state.numOfCakes
+}
 
+const mapDispatchToProps = dispatch => {
+    return {
+        buyCake: () => dispatch(buyCake())
+    }
 }
 
 export default CakeContainer
